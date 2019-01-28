@@ -12,7 +12,7 @@ It reproduces the results obtained with the S2S (segmentation to segmentation) m
 To run the code, you will need to install lua torch and the following torch packages: cutorch, cunn, cudnn, nnx, nngraph, paths, display, torchnet. 
 
 ### Training/validation data
-[Download data](https://s3.amazonaws.com/nextsegmpred/Data2.zip) and save in the "Data" directory. It contains soft segmentations produced by the Dilation10 network applied to the Cityscapes dataset and has two subdirectories:
+[Download data](https://dl.fbaipublicfiles.com/segmpred/sample_data.zip) and save in the "Data" directory. It contains soft segmentations produced by the Dilation10 network applied to the Cityscapes dataset and has two subdirectories:
 - **train** contains 99 sample training batches of 4 sequences x 5 frames (4 inputs + 1 target) x 64 x 64. Please note that this is only a small part of the whole training set, provided for the reference, and it is not sufficient for training the network from scratch;
 - **val** contains 500 test sequences from Cityscapes: 125 batches of 4 sequences x 7 frames (4 inputs + 3 targets) x 256 x 128 (contains both RGB images and their segmentations).
 
